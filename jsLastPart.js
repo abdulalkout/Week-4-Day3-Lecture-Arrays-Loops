@@ -44,3 +44,26 @@ for(let i=0; i<=20; i++){
     }
     console.log("Love me, pet me! HSSSSSS!")
 }
+
+
+
+
+//----------------------------------//
+//----------Find the Median---------//
+
+console.log("//----------Find the Median---------//")
+const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+
+
+//Find the median number in the following numsarray, then console.log that number.
+let median =0;
+// console.log(nums.length)
+if(nums.length%2 === 0){
+    let medianIndex = nums.length/2;
+    median = nums[medianIndex] 
+}else if (nums.length%2 !== 0){
+    let medianIndex1 = (nums.length+1) /2
+    let medianIndex2 = (nums.length-1) /2
+    median = (nums[medianIndex1] + nums[medianIndex2]) /2
+}
+console.log(median)
